@@ -17,6 +17,7 @@ function App() {
             <label for="만년형">만년형</label>
         </li>
       </ul>
+      <Category title={category[0].title} data={category[0].sub}></Category>
     </div>
   );
 }
