@@ -1,0 +1,39 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+  }
+
+.mainCategory {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    /* overflow: hidden */
+}
+
+.groupHeader {
+    padding: 0px 10px;
+    margin: 10px 0px;
+    width: 70px;
+    text-align: center;
+}
+
+.subCategory {
+    list-style: none;
+    padding-left: 10px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    white-space: nowrap;
+    overflow: auto;
+    position: absolute;
+    left: 80px;
+    /* margin-bottom: -17px */
+}
+
+li {
+    margin: 5px;
+    word-break:keep-all;
+    white-space: nowrap;
+}
