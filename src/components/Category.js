@@ -6,6 +6,7 @@ function Category(props) {
   function handleClick(e) {
     console.log(e.target.id);
     console.log(e.target.checked);
+    props.onClick(e.target.id, e.target.checked);
   }
   // 리스트 구성하기
   const lists = [];
