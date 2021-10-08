@@ -54,11 +54,18 @@ function Category(props) {
     );
     i = i + 1;
   }
+
+  // resetBtn
+  function handleResetBtn() {
+    setKeyword([]);
+  }
+
   return (
     <div className="category">
       <div>
         {lists}
       </div>
+      <button onClick={handleResetBtn}>RESET!</button>
     </div>
   );
 }
