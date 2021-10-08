@@ -16,7 +16,12 @@ function Category(props) {
       setKeyword(selectedKeyword.filter(keyword => keyword !== id));
     }
   }
-  // 리스트 구성하기
+
+  useEffect(() => {
+    // selectedKeyword 가 변할 때 마다 props.onClick 실행해 App에 배열을 넘김
+    props.onClick(selectedKeyword);
+  }, [selectedKeyword, props]);
+  
   const lists = [];
   // 리스트 구성하기
   let i = 0;
