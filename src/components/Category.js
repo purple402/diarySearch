@@ -32,7 +32,7 @@ function Category(props) {
     let subLists = [];
     while(j < catData.sub.length){
       subLists.push(
-          <li key={i * 100 + j}>
+          <li key={i * 100 + j} className="keyword">
             <input
               type="checkbox"
               id={catData.sub[j]}
@@ -65,15 +65,17 @@ function Category(props) {
   let k = 0;
   while(k < selectedKeyword.length) {
     selectedKeywordLists.push(
-      <button 
-        className="KeywordDeleteBtn"
-        key={k}
-        id={selectedKeyword[k]}
-        onClick={handleDelBtn}>
-          <span># </span>
-          {selectedKeyword[k]}
-          <i className="fas fa-times"></i>
-      </button>
+      <li className="keyword isSelected">
+        <button 
+          className="KeywordDeleteBtn"
+          key={k}
+          id={selectedKeyword[k]}
+          onClick={handleDelBtn}>
+            <span># </span>
+            {selectedKeyword[k]}
+            <i className="fas fa-times"></i>
+        </button>
+      </li>
     )
     k = k + 1;
   }
