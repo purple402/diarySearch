@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import SelectedKeywordLists from "./SelectedKeywordLists.js";
 import './Category.css';
 
 function Category(props) {
@@ -60,44 +61,16 @@ function Category(props) {
     setKeyword([]);
   }
 
-  // selectedKeywordLists
-  const selectedKeywordLists = [];
-  let k = 0;
-  while(k < selectedKeyword.length) {
-    selectedKeywordLists.push(
-      <li className="keyword isSelected">
-        <button 
-          className="KeywordDeleteBtn"
-          key={k}
-          id={selectedKeyword[k]}
-          onClick={handleDelBtn}>
-            <span># </span>
-            {selectedKeyword[k]}
-            <i className="fas fa-times"></i>
-        </button>
-      </li>
-    )
-    k = k + 1;
-  }
-
-  // DeleteBtn
-  function handleDelBtn(e) {
-    let id = e.target.id;
-    if(id === '') {
-      id = e.target.parentElement.id;
-    };
-    setKeyword(selectedKeyword.filter(keyword => keyword !== id))
-  }
-
   return (
     <div className="category">
       <div>
         {lists}
       </div>
       <button onClick={handleResetBtn}>RESET!</button>
-      <div className="selectedKeywordLists">
-        {selectedKeywordLists}
-      </div>
+      <SelectedKeywordLists
+        selectedKeywords={selectedKeyword}
+        onChange={(keywords) => setKeyword(keywords)}
+        ></SelectedKeywordLists>
     </div>
   );
 }
