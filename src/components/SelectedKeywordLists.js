@@ -1,4 +1,5 @@
 import React from 'react';
+import './selectedKeywordLists.css';
 
 function SelectedKeywordLists(props) {
 //   const [keywords, setKeywords] = useState(props.selectedKeywords);
