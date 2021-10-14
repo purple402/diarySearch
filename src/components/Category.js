@@ -69,6 +69,7 @@ function Category(props) {
       <button onClick={handleResetBtn}>RESET!</button>
       <SelectedKeywordLists
         selectedKeywords={selectedKeywords}
+        keywords={[]}
         onClick={(keywords) => setKeyword(keywords)}
         ></SelectedKeywordLists>
     </div>

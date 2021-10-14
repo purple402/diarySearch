@@ -1,17 +1,26 @@
+
+/* Result */
+.diaryKeywords button {
+    font-size: 13px;
+    color: rgb(30, 0, 223);
+  }
+
 /* selectedKeyword */
-.selectedKeywordLists {
+.keywordLists {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 10px;
 }
 
-.KeywordDeleteBtn {
-    background-color: rgb(111 99 192 / 84%);
+.keywordDeleteBtn {
+    background-color: rgba(172, 166, 185, 0.7);
+    /* border: 1px solid black; */
     border: none;
     border-radius: 10px;
     padding: 8px 15px;
     margin: 10px 5px;
-    color: white;
+    
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -19,17 +28,23 @@
     transition: 0.3s;
 }
 
-.KeywordDeleteBtn:hover {
+.isChecked .keywordDeleteBtn {
+    background-color: rgba(111, 99, 192, 0.84);
+    color: white;
+}
+
+.keywordDeleteBtn:hover {
     background-color: rgb(92 78 185);
 }
 
-.KeywordDeleteBtn span {
+.keywordDeleteBtn span {
     margin-right: 5px;
     margin-top: 1px;
 }
 
-.KeywordDeleteBtn i {
+.keywordDeleteBtn i {
     margin: 0 0 0 7px;
     opacity: 0.7;
     font-size: 18px;
 }
+
