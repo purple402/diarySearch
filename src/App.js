@@ -3,7 +3,7 @@ import Category from "./components/Category.js";
 import "./App.css";
 
 function App() {
-  const [selectedKeyword, setKeyword] = useState([]);
+  const [selectedKeywords, setKeyword] = useState([]);
   const category = [
     {id: 1, title:"날짜형식", sub:["2022년", "만년"]},
     {id: 2, title:"내지구성", sub:["연간", "월간", "주간", "일간"]},
@@ -26,7 +26,7 @@ function App() {
       {/* <h1>다이어리 키워드로 검색하기</h1> */}
       <Category
         data={category}
-        onClick={(selectedKeyword) => handleCategory(selectedKeyword)}
+        onChange={(selectedKeyword) => handleCategory(selectedKeyword)}
         ></Category>
     </div>
   );

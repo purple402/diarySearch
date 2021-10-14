@@ -3,8 +3,8 @@ import SelectedKeywordLists from "./SelectedKeywordLists.js";
 import './Category.css';
 
 function Category(props) {
-  const [selectedKeyword, setKeyword] = useState([]);
-  
+  const [selectedKeywords, setKeyword] = useState([]);
+
   // 클릭 이벤트 처리 함수
   function handleClick(e) {
     const id = e.target.id;
@@ -14,14 +14,14 @@ function Category(props) {
       setKeyword(prevList => [...prevList, id]);
     } else {
       // 해제한 경우
-      setKeyword(selectedKeyword.filter(keyword => keyword !== id));
+      setKeyword(selectedKeywords.filter(keyword => keyword !== id));
     }
   }
 
   useEffect(() => {
-    // selectedKeyword 가 변할 때 마다 props.onClick 실행해 App에 배열을 넘김
-    props.onClick(selectedKeyword);
-  }, [selectedKeyword, props]);
+    // selectedKeywords 가 변할 때 마다 props.onChange 실행해 App에 배열을 넘김
+    props.onChange(selectedKeywords);
+  }, [selectedKeywords, props]);
   
   const lists = [];
   // 리스트 구성하기
@@ -38,7 +38,7 @@ function Category(props) {
               type="checkbox"
               id={catData.sub[j]}
               onChange={handleClick}
-              checked={selectedKeyword.includes(catData.sub[j]) ? true : false}
+              checked={selectedKeywords.includes(catData.sub[j]) ? true : false}
               ></input>
             <label htmlFor={catData.sub[j]}>{catData.sub[j]}</label>
           </li>
@@ -68,8 +68,8 @@ function Category(props) {
       </div>
       <button onClick={handleResetBtn}>RESET!</button>
       <SelectedKeywordLists
-        selectedKeywords={selectedKeyword}
-        onChange={(keywords) => setKeyword(keywords)}
+        selectedKeywords={selectedKeywords}
+        onClick={(keywords) => setKeyword(keywords)}
         ></SelectedKeywordLists>
     </div>
   );
