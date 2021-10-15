@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Category from "./components/Category.js";
+import ResultLists from "./components/ResultLists.js";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
         data={category}
         onChange={(selectedKeyword) => handleCategory(selectedKeyword)}
         ></Category>
+      <ResultLists
+        selectedKeywords={selectedKeywords}
+        onChange={(selectedKeyword) => handleKeywords(selectedKeyword)}></ResultLists>
     </div>
   );
 }
