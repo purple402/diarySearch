@@ -1,5 +1,5 @@
 import React from 'react';
-import SelectedKeywordLists from "./SelectedKeywordLists.js";
+import KeywordLists from "./KeywordLists.js";
 import './Category.css';
 
 function Category(props) {
@@ -17,7 +17,7 @@ function Category(props) {
       props.onChange(selectedKeywords.filter(keyword => keyword !== id));
     }
   }
-  
+
   const lists = [];
   // 리스트 구성하기
   let i = 0;
@@ -62,11 +62,11 @@ function Category(props) {
         {lists}
       </div>
       <button onClick={handleResetBtn}>RESET!</button>
-      <SelectedKeywordLists
+      <KeywordLists
         selectedKeywords={selectedKeywords}
         keywords={[]}
         onClick={(keywords) => props.onChange(keywords)}
-        ></SelectedKeywordLists>
+        ></KeywordLists>
     </div>
   );
 }

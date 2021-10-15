@@ -1,7 +1,7 @@
 import React from 'react';
-import './selectedKeywordLists.css';
+import './keywordLists.css';
 
-function SelectedKeywordLists(props) {
+function KeywordLists(props) {
   let keywords = props.selectedKeywords;
   let wholeKeywords = props.keywords;
   
@@ -80,4 +80,4 @@ function SelectedKeywordLists(props) {
   )
 }
 
-export default SelectedKeywordLists;
+export default KeywordLists;

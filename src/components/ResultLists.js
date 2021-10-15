@@ -1,5 +1,5 @@
 import React from 'react';
-import SelectedKeywordLists from "./SelectedKeywordLists.js";
+import KeywordLists from "./KeywordLists.js";
 import './ResultLists.css';
 
 function ResultLists(props) {
@@ -18,10 +18,10 @@ function ResultLists(props) {
           <div className="diaryTitle">2022 프리즘 데일리 다이어리(날짜형,일간,미니)</div>
           <div className="diaryBrand">INDIGO</div>
           <div className="diaryKeywords">
-          <SelectedKeywordLists
+          <KeywordLists
             selectedKeywords={props.selectedKeywords}
             keywords={keywords}
-            onClick={(newKeywords) => props.onChange(newKeywords)}></SelectedKeywordLists>
+            onClick={(newKeywords) => props.onChange(newKeywords)}></KeywordLists>
           </div>
         </div>
       </li>
