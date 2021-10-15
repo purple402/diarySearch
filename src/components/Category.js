@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import SelectedKeywordLists from "./SelectedKeywordLists.js";
 import './Category.css';
 
 function Category(props) {
-  const [selectedKeywords, setKeyword] = useState([]);
+  let selectedKeywords = props.selectedKeywords
 
   // 클릭 이벤트 처리 함수
   function handleClick(e) {
@@ -11,17 +11,12 @@ function Category(props) {
     const checked = e.target.checked;
     if(checked) {
       // 체크된 경우
-      setKeyword(prevList => [...prevList, id]);
+      props.onChange([...selectedKeywords, id]);
     } else {
       // 해제한 경우
-      setKeyword(selectedKeywords.filter(keyword => keyword !== id));
+      props.onChange(selectedKeywords.filter(keyword => keyword !== id));
     }
   }
-
-  useEffect(() => {
-    // selectedKeywords 가 변할 때 마다 props.onChange 실행해 App에 배열을 넘김
-    props.onChange(selectedKeywords);
-  }, [selectedKeywords, props]);
   
   const lists = [];
   // 리스트 구성하기
@@ -58,7 +53,7 @@ function Category(props) {
 
   // resetBtn
   function handleResetBtn() {
-    setKeyword([]);
+    props.onChange([]);
   }
 
   return (
@@ -70,7 +65,7 @@ function Category(props) {
       <SelectedKeywordLists
         selectedKeywords={selectedKeywords}
         keywords={[]}
-        onClick={(keywords) => setKeyword(keywords)}
+        onClick={(keywords) => props.onChange(keywords)}
         ></SelectedKeywordLists>
     </div>
   );
