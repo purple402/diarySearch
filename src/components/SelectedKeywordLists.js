@@ -4,7 +4,7 @@ import './selectedKeywordLists.css';
 function SelectedKeywordLists(props) {
   let keywords = props.selectedKeywords;
   let wholeKeywords = props.keywords;
-
+  
   // wholeKeywordLists
   const wholeKeywordLists = [];
   if(wholeKeywords.length) {
@@ -63,13 +63,13 @@ function SelectedKeywordLists(props) {
     props.onClick(keywords);
   }
 
+  // AddBtn
   function handleAddBtn(e){
     let id = e.target.id;
     if(id === '') {
       id = e.target.parentElement.id;
     };
-    keywords.push(id);
-    props.onClick(keywords);
+    props.onClick([...keywords, id]);
   }
 
   return (
