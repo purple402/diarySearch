@@ -18,7 +18,7 @@ function App() {
     {id: 9, title:"기타", sub:["타임라인", "체크리스트", "밴드", "가름끈", "모눈"]},
   ];
   
-  function handleCategory(newKeyword) {
+  function handleKeywords(newKeyword) {
     setKeyword(newKeyword);
   }
 
@@ -27,7 +27,8 @@ function App() {
       {/* <h1>다이어리 키워드로 검색하기</h1> */}
       <Category
         data={category}
-        onChange={(selectedKeyword) => handleCategory(selectedKeyword)}
+        selectedKeywords={selectedKeywords}
+        onChange={(selectedKeyword) => handleKeywords(selectedKeyword)}
         ></Category>
       <ResultLists
         selectedKeywords={selectedKeywords}
