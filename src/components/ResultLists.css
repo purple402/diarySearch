@@ -5,6 +5,9 @@
   
   .diary {
     display: flex;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid gray;
   }
   
   .diaryImage {
@@ -12,17 +15,20 @@
   }
   
   .diaryImage img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
   }
   
   .diaryTitle {
-    font-size: 16px;
+    font-size: 17px;
   }
   
   .diaryBrand {
-    font-size: 14px;
+    font-size: 15px;
     opacity: 0.7;
-  
     font-weight: bold;
+  }
+
+  .diaryTitle, .diaryBrand {
+    padding-left: 16px;
   }

@@ -14,9 +14,8 @@
 }
 
 .keywordDeleteBtn {
-    background-color: rgba(172, 166, 185, 0.7);
-    /* border: 1px solid black; */
-    border: none;
+    /* background-color: rgba(172, 166, 185, 0.7); */
+    border: 1px solid rgba(30, 0, 223, 0.8);
     border-radius: 10px;
     padding: 8px 15px;
     margin: 10px 5px;
@@ -31,10 +30,15 @@
 .isChecked .keywordDeleteBtn {
     background-color: rgba(111, 99, 192, 0.84);
     color: white;
+    border: none;
 }
 
 .keywordDeleteBtn:hover {
-    background-color: rgb(92 78 185);
+    background-color: rgba(92, 78, 185, 0.315);
+}
+
+.isChecked .keywordDeleteBtn:hover {
+    background-color: rgb(92, 78, 185);
 }
 
 .keywordDeleteBtn span {
