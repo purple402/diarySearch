@@ -5,6 +5,7 @@ import './ResultLists.css';
 
 function ResultLists(props) {
   const selectedKeywords = props.selectedKeywords;
+  let message = '';
   function containKeywords(data) {
     for (let i = 0; i < selectedKeywords.length; i++) {
       if(data.tag.indexOf(selectedKeywords[i]) < 0) return false;
@@ -35,8 +36,15 @@ function ResultLists(props) {
       </li>
     )
   })
+  if(items.length === 0) {
+    message = "검색 결과가 없습니다."
+  }
+  if(selectedKeywords.length === 0) {
+    message = "키워드를 선택해 보세요."
+  }
   return (
     <div className="ResultLists">
+    <span className="ResultMessage">{message}</span>
     <ul className="diaries">
       {items}
     </ul>
