@@ -1,30 +1,44 @@
 import React from 'react';
 import KeywordLists from "./KeywordLists.js";
+import Information from "./Information.js";
 import './ResultLists.css';
 
 function ResultLists(props) {
-  const keywords = ["2022년", "월간", "주간", "1년", "A5"];
-
-  return (
-    <div className="ResultLists">
-    <ul className="diaries">
-      <li className="diary">
+  const selectedKeywords = props.selectedKeywords;
+  function containKeywords(data) {
+    for (let i = 0; i < selectedKeywords.length; i++) {
+      if(data.tag.indexOf(selectedKeywords[i]) < 0) return false;
+    }
+    return true;
+  }
+  const items = Information.filter(containKeywords).map(data => {
+    return(
+      <li className="diary"
+        key={data.id}>
         <div className="diaryImage">
           <div>
-            <img className="diaryThumbnail" src={"http://thumbnail.10x10.co.kr/webimage/image/add1/409/A004096257_01.jpg?cmd=thumb&w=240&h=240&fit=true&ws=false"} alt="thumbnail"></img>
+            <img className="diaryThumbnail" src={data.image} alt="thumbnail"></img>
           </div>
+          <div className="diarySize">size: <span>{data.size}</span></div>
+          <a className="diaryLink" href={data.link}>link</a>
         </div>
         <div className="diaryInfo">
-          <div className="diaryTitle">2022 프리즘 데일리 다이어리(날짜형,일간,미니)</div>
-          <div className="diaryBrand">INDIGO</div>
+          <div className="diaryTitle">{data.name}</div>
+          <div className="diaryBrand">{data.brand}</div>
           <div className="diaryKeywords">
           <KeywordLists
-            selectedKeywords={props.selectedKeywords}
-            keywords={keywords}
+            selectedKeywords={selectedKeywords}
+            keywords={data.tag}
             onClick={(newKeywords) => props.onChange(newKeywords)}></KeywordLists>
           </div>
         </div>
       </li>
+    )
+  })
+  return (
+    <div className="ResultLists">
+    <ul className="diaries">
+      {items}
     </ul>
   </div>
   )
