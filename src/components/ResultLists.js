@@ -11,6 +11,12 @@ function ResultLists(props) {
       if(data.tag.indexOf(selectedKeywords[i]) < 0) return false;
     }
     return true;
+    // selectedKeywords.forEach(keyword => {
+    //   console.log(data.name, keyword, data.tag.indexOf(keyword))
+    //   if(data.tag.indexOf(keyword) < 0) {
+    //     return false;
+    //   }
+    // })
   }
   const items = Information.filter(containKeywords).map(data => {
     return(
@@ -20,8 +26,8 @@ function ResultLists(props) {
           <div>
             <img className="diaryThumbnail" src={data.image} alt="thumbnail"></img>
           </div>
-          <div className="diarySize">size: <span>{data.size}</span></div>
-          <a className="diaryLink" href={data.link}>link</a>
+          <div className="diarySize">size: <span>{data.size} (mm)</span></div>
+          <a className="diaryLink" href={data.link} target="_blank">link</a>
         </div>
         <div className="diaryInfo">
           <div className="diaryTitle">{data.name}</div>

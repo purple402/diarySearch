@@ -1,34 +1,61 @@
 /* diaries */
 .diaries {
-    list-style: none;
-  }
-  
-  .diary {
-    display: flex;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid gray;
-  }
-  
-  .diaryImage {
-    margin-right: 15px;
-  }
-  
-  .diaryImage img {
-    width: 140px;
-    height: 140px;
-  }
-  
-  .diaryTitle {
-    font-size: 17px;
-  }
-  
-  .diaryBrand {
-    font-size: 15px;
-    opacity: 0.7;
-    font-weight: bold;
-  }
+  list-style: none;
+}
 
-  .diaryTitle, .diaryBrand {
-    padding-left: 16px;
-  }
+.diary {
+  display: flex;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid gray;
+}
+
+.diaryImage {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.diaryImage img {
+  width: 140px;
+  height: 140px;
+}
+
+.diarySize {
+  margin-bottom: 5px;
+}
+
+.diaryLink {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: rgba(48, 208, 230, 0.747);
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.diaryLink:hover {
+  background-color: rgb(48, 208, 230);
+}
+
+.diaryLink:visited {
+  background-color: rgb(130, 33, 221);
+}
+
+/* diaryInfo */
+.diaryTitle {
+  font-size: 17px;
+}
+
+.diaryBrand {
+  font-size: 15px;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.diaryTitle,
+.diaryBrand {
+  padding-left: 16px;
+}
