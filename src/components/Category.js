@@ -61,7 +61,10 @@ function Category(props) {
       <div>
         {lists}
       </div>
-      <button onClick={handleResetBtn}>RESET!</button>
+      <button
+        className="resetBtn"
+        onClick={handleResetBtn}
+      >초기화하기</button>
       <KeywordLists
         selectedKeywords={selectedKeywords}
         keywords={[]}
