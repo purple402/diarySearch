@@ -19,9 +19,26 @@ function App() {
     {id: 9, title:"기타", sub:["타임라인", "체크리스트", "모눈", "주말크기작음", "월요일시작", "가름끈", "밴드", "포켓","정사각형"]},
   ];
   
+  // 전달받은 키워드 반영
   function handleKeywords(newKeyword) {
     setKeyword(newKeyword);
   }
+
+  // 키워드 4개 이상 선택
+  let message = '키워드를 네 개 이상 선택해 주세요'; 
+  let result = '';
+  function checkNumber() {
+    if (selectedKeywords.length < 4) {
+      return message;
+    } else {
+      return(
+        <ResultLists
+          selectedKeywords={selectedKeywords}
+          onChange={(selectedKeyword) => handleKeywords(selectedKeyword)}></ResultLists>
+      )
+    }
+  }
+  result = checkNumber();
 
   return (
     <div className="App">
@@ -31,9 +48,7 @@ function App() {
         selectedKeywords={selectedKeywords}
         onChange={(selectedKeyword) => handleKeywords(selectedKeyword)}
         ></Category>
-      <ResultLists
-        selectedKeywords={selectedKeywords}
-        onChange={(selectedKeyword) => handleKeywords(selectedKeyword)}></ResultLists>
+        {result}
     </div>
   );
 }
