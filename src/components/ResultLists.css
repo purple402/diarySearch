@@ -30,18 +30,18 @@
   color: white;
   padding: 5px;
   border-radius: 7px;
-  background-color: rgba(48, 208, 230, 0.747);
+  background-color: rgba(111, 99, 192, 0.84);
   text-align: center;
 
   transition: 0.3s;
 }
 
 .diaryLink:hover {
-  background-color: rgb(48, 208, 230);
+  background-color: rgba(192, 99, 164, 0.84);
 }
 
 .diaryLink:visited {
-  background-color: rgb(130, 33, 221);
+  background-color: rgba(189, 40, 40, 0.84);
 }
 
 /* diaryInfo */
@@ -58,4 +58,8 @@
 .diaryTitle,
 .diaryBrand {
   padding-left: 16px;
+}
+
+.diaryKeywords button {
+  font-size: 0.9rem;
 }
