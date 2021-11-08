@@ -27,7 +27,11 @@ function ResultLists(props) {
             <img className="diaryThumbnail" src={data.image} alt="thumbnail"></img>
           </div>
           <div className="diarySize">size: <span>{data.size} (mm)</span></div>
-          <a className="diaryLink" href={data.link} target="_blank">link</a>
+          <a 
+            className="diaryLink"
+            href={data.link}
+            target="_blank"
+            rel="noopener noreferrer">link</a>
         </div>
         <div className="diaryInfo">
           <div className="diaryTitle">{data.name}</div>
