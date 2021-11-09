@@ -25,11 +25,12 @@ function App() {
   }
 
   // 키워드 4개 이상 선택
-  let message = '키워드를 네 개 이상 선택해 주세요'; 
   let result = '';
   function checkNumber() {
     if (selectedKeywords.length < 4) {
-      return message;
+      return (
+      <div className="keywordMessage">키워드를 네 개 이상 선택해주세요</div>
+      )
     } else {
       return(
         <ResultLists
