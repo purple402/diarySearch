@@ -1,7 +1,6 @@
 .category {
   display: flex;
   flex-direction: column;
-  width: 95vw;
 }
 
 /* list */
@@ -15,7 +14,7 @@
 
 .groupHeader {
   margin: 10px 0px;
-  width: 25vw;
+  width: 20%;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -24,7 +23,7 @@
   list-style: none;
   padding-left: 0px;
   display: flex;
-  width: 70vw;
+  width: 75%;
   align-items: center;
   overflow: auto;
   position: absolute;
@@ -44,13 +43,53 @@
 }
 
 .subCategory::-webkit-scrollbar-thumb {
-  background-color: rgba(112, 115, 196, 1);
+  /* background-color: rgba(112, 115, 196, 1); */
+  background-color: rgb(141, 142, 163);
   border-radius: 0.3rem;
 }
 
 .subCategory::-webkit-scrollbar-track {
   background-color: rgb(175, 172, 199);
   border-radius: 0.3rem;
+}
+
+.subCategory::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+
+.subCategory .keyword {
+  position: relative;
+}
+
+.checkedLabel {
+  position: absolute;
+  width: 0%;
+  height: 50%;
+  bottom: 3px;
+  z-index: -1;
+  background-color: yellow;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+input:checked + .checkedLabel {
+  width: 100%;
+  opacity: 0.5;
+  transition-property: width;
+  transition-timing-function: ease-in;
+}
+
+input:checked + label {
+  background-color: yellow
 }
 
 /* Reset button */
@@ -69,16 +108,16 @@
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   transition: 0.5s;
-  background-color: rgb(200, 60, 60);
+  background-color: rgb(218, 73, 73);
   color: #ffffff;
 }
 
 .resetBtn:active,
 .resetBtn:hover,
 .resetBtn:focus {
-  background: rgb(167, 38, 38);
-  outline: 0;
+  background: rgb(185, 43, 43);
 }
+
 .resetBtn:disabled {
   opacity: 0.5;
 }

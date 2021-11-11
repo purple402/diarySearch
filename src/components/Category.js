@@ -35,6 +35,7 @@ function Category(props) {
               onChange={handleClick}
               checked={selectedKeywords.includes(catData.sub[j]) ? true : false}
               ></input>
+            <label htmlFor={catData.sub[j]} className="checkedLabel"></label>
             <label htmlFor={catData.sub[j]}>{catData.sub[j]}</label>
           </li>
       )
