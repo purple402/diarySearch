@@ -22,9 +22,7 @@ function KeywordLists(props) {
             className="keywordDeleteBtn"
             id={wholeKeywords[i]}
             onClick={handleAddBtn}>
-              <span># </span>
               {wholeKeywords[i]}
-              <i className="fas fa-times"></i>
           </button>
         </li>
       )
@@ -44,9 +42,8 @@ function KeywordLists(props) {
           className="keywordDeleteBtn"
           id={keywords[i]}
           onClick={handleDelBtn}>
-            <span># </span>
+            <i className="fas fa-thumbtack"></i>
             {keywords[i]}
-            <i className="fas fa-times"></i>
         </button>
       </li>
     )

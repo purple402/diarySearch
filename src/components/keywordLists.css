@@ -7,32 +7,31 @@
 }
 
 .keywordDeleteBtn {
-    /* background-color: rgba(172, 166, 185, 0.7); */
-    border: 1px solid rgba(30, 0, 223, 0.8);
-    border-radius: 10px;
+    background-color: rgb(255, 255, 255);;
+    border: 0.3px solid rgba(102, 102, 102, 0.76);
+    border-radius: 4px;
     padding: 8px 15px;
-    margin: 5px;
-    
+    margin: 5px;    
     font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
     transition: 0.3s;
     height: 40px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .isChecked .keywordDeleteBtn {
-    background-color: rgba(111, 99, 192, 0.84);
-    color: white;
-    border: rgba(111, 99, 192, 0.84);
+    background-color: rgba(255, 255, 0, 0.836);
+    border: none;
 }
 
 .keywordDeleteBtn:hover {
-    background-color: rgba(92, 78, 185, 0.315);
+    background-color: rgba(240, 240, 29, 0.87);
 }
 
 .isChecked .keywordDeleteBtn:hover {
-    background-color: rgb(92, 78, 185);
+    background-color: rgba(240, 240, 29, 0.87);
 }
 
 .keywordDeleteBtn span {
@@ -40,9 +39,6 @@
     margin-top: 1px;
 }
 
-.keywordDeleteBtn i {
-    margin: 3px 0 0 7px;
-    opacity: 0.7;
-    font-size: 18px;
+.keywordDeleteBtn .fa-thumbtack {
+    margin: 2px 7px 0 0;
 }
-
