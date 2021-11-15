@@ -42,3 +42,10 @@
 .keywordDeleteBtn .fa-thumbtack {
     margin: 2px 7px 0 0;
 }
+
+@media (max-width: 860px) {
+    .keywordDeleteBtn {
+        font-size: 0.8rem;
+        height: 35px;
+    }
+}

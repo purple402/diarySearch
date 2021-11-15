@@ -63,3 +63,41 @@
 .diaryKeywords button {
   font-size: 0.9rem;
 }
+
+@media (max-width: 760px) {
+  .diaries{
+    padding: 0px 15px;
+  }
+
+  .diary {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diaryImage {
+    flex-direction: row;
+  }
+
+  .diaryImage img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .diaryLink, .diarySize {
+    margin-left: 16px;
+  }
+
+  .diaryLink {
+    display: block;
+  }
+
+  .diary .keywordLists {
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+  
+  .diaryKeywords button {
+    font-size: 0.8rem;
+  }
+
+}

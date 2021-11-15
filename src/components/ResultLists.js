@@ -6,6 +6,16 @@ import './ResultLists.css';
 function ResultLists(props) {
   const selectedKeywords = props.selectedKeywords;
   let message = '';
+
+  // 모바일 확인
+  function detectMobileDevice() {
+    const minWidth = 760;
+    return window.innerWidth <= minWidth;
+  }
+
+  const isMobile = detectMobileDevice();
+  console.log(isMobile);
+
   function containKeywords(data) {
     for (let i = 0; i < selectedKeywords.length; i++) {
       if(data.tag.indexOf(selectedKeywords[i]) < 0) return false;
@@ -18,33 +28,63 @@ function ResultLists(props) {
     //   }
     // })
   }
+
   const items = Information.filter(containKeywords).map(data => {
-    return(
-      <li className="diary"
-        key={data.id}>
-        <div className="diaryImage">
-          <div>
-            <img className="diaryThumbnail" src={data.image} alt="thumbnail"></img>
+    if(!isMobile){
+      return(
+        <li className="diary"
+          key={data.id}>
+          <div className="diaryImage">
+            <div>
+              <img className="diaryThumbnail" src={data.image} alt="thumbnail"></img>
+            </div>
+            <div className="diarySize">size: <span>{data.size} (mm)</span></div>
+            <a 
+              className="diaryLink"
+              href={data.link}
+              target="_blank"
+              rel="noopener noreferrer">link</a>
           </div>
-          <div className="diarySize">size: <span>{data.size} (mm)</span></div>
-          <a 
-            className="diaryLink"
-            href={data.link}
-            target="_blank"
-            rel="noopener noreferrer">link</a>
-        </div>
-        <div className="diaryInfo">
-          <div className="diaryTitle">{data.name}</div>
-          <div className="diaryBrand">{data.brand}</div>
+          <div className="diaryInfo">
+            <div className="diaryTitle">{data.name}</div>
+            <div className="diaryBrand">{data.brand}</div>
+            <div className="diaryKeywords">
+            <KeywordLists
+              selectedKeywords={selectedKeywords}
+              keywords={data.tag}
+              onClick={(newKeywords) => props.onChange(newKeywords)}></KeywordLists>
+            </div>
+          </div>
+        </li>
+      )
+    } else {
+      return(
+        <li className="diary"
+          key={data.id}>
+          <div className="diaryImage">
+            <div>
+              <img className="diaryThumbnail" src={data.image} alt="thumbnail"></img>
+            </div>
+            <div className="diaryInfo">
+              <div className="diaryTitle">{data.name}</div>
+              <div className="diaryBrand">{data.brand}</div>
+              <div className="diarySize">size: <span>{data.size} (mm)</span></div>
+              <a 
+                className="diaryLink"
+                href={data.link}
+                target="_blank"
+                rel="noopener noreferrer">link</a>
+            </div>
+          </div>
           <div className="diaryKeywords">
           <KeywordLists
             selectedKeywords={selectedKeywords}
             keywords={data.tag}
             onClick={(newKeywords) => props.onChange(newKeywords)}></KeywordLists>
           </div>
-        </div>
-      </li>
-    )
+        </li>
+      )
+    }
   })
   if(items.length === 0) {
     message = "검색 결과가 없습니다."

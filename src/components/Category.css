@@ -121,3 +121,17 @@ input:checked + label {
 .resetBtn:disabled {
   opacity: 0.5;
 }
+
+@media (max-width: 760px) {
+  .groupHeader {
+    font-size: 1rem;
+  }
+
+  .subCategory li {
+    font-size: 0.8rem;
+  }
+
+  .resetBtn {
+    font-size: 0.9rem;
+  }
+}
