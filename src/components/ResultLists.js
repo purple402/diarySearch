@@ -14,7 +14,6 @@ function ResultLists(props) {
   }
 
   const isMobile = detectMobileDevice();
-  console.log(isMobile);
 
   function containKeywords(data) {
     for (let i = 0; i < selectedKeywords.length; i++) {

@@ -1,5 +1,10 @@
 body {
   padding: 10px;
+  /* background: linear-gradient(rgb(255, 187, 51) 50%, rgb(85, 187, 170) 0);
+  background-size: 100% 50px; */
+  background: linear-gradient(rgb(246 244 245) 95%, rgb(208 223 234) 0);
+  background-size: 100% 50px;
+  
 }
 
 .keywordMessage {
@@ -8,4 +13,22 @@ body {
   justify-content: center;
   height: 4rem;
   font-size: 1rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category, .ResultLists {
+  max-width: 800px;
+  padding-top: 20px;
+}
+
+
+@media (max-width: 760px) {
+  body {
+    background-size: 100% 30px;
+  }
 }
