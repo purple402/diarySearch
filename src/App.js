@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Category from "./components/Category.js";
 import ResultLists from "./components/ResultLists.js";
+import Information from "./components/Information.js";
 import "./App.css";
 
 function App() {
-  const [selectedKeywords, setKeyword] = useState(["월간"]);
+  const [selectedKeywords, setKeyword] = useState([]);
 
   const category = [
     { id: 1, title: "날짜형식", sub: ["2022년", "만년"] },
@@ -81,10 +82,18 @@ function App() {
     }
   }
   result = checkNumber();
-
+  const length = Information.length
   return (
     <div className="App">
-      <h1>📚다이어리 검색기</h1>
+      <div className="titleDiv">
+      <span id="title">📚다이어리 검색기</span>
+      <span className="info">{length}개의 다이어리들 중 검색합니다 (2022.11.23)</span>
+      <a
+        class="info"
+        href="https://joy-lee.notion.site/joy-lee/b4d709f83ebe436d84599e3e99d8fbab"
+        target="_blank"
+        rel="noopener noreferrer">설명서를 참고해주세요!</a>
+      </div>
       <Category
         data={category}
         selectedKeywords={selectedKeywords}
