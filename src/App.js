@@ -86,11 +86,14 @@ function App() {
   return (
     <div className="App">
       <div className="titleDiv">
-      <span id="title">📚다이어리 검색기</span>
+      <div className="title">
+        <span id="emoji">📚</span>
+        <span id="appTitle">다이어리 검색기</span>
+      </div>
       <span className="info">{length}개의 다이어리들 중 검색합니다 (2022.11.23)</span>
       <a
         class="info"
-        href="https://joy-lee.notion.site/joy-lee/b4d709f83ebe436d84599e3e99d8fbab"
+        href="https://joy-lee.notion.site/b4d709f83ebe436d84599e3e99d8fbab"
         target="_blank"
         rel="noopener noreferrer">설명서를 참고해주세요!</a>
       </div>
