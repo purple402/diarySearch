@@ -888,7 +888,7 @@ const Information = [
   },
   {
     id: 41,
-    name: "(만년형) Mes 12 Mois _ VER.7",
+    name: "Mes 12 Mois _ VER.7",
     brand: "OH,LOLLY DAY!",
     size: "140*188",
     image:
@@ -914,7 +914,7 @@ const Information = [
   },
   {
     id: 42,
-    name: "(날짜형) twenty,twenty two._2022_big",
+    name: "twenty,twenty two._2022_big",
     brand: "OH,LOLLY DAY!",
     size: "140*188",
     image:
@@ -939,7 +939,7 @@ const Information = [
   },
   {
     id: 43,
-    name: "(날짜형) twenty,twenty two._2022_mini",
+    name: "twenty,twenty two._2022_mini",
     brand: "OH,LOLLY DAY!",
     size: "100*188",
     image:
@@ -1009,7 +1009,7 @@ const Information = [
   },
   {
     id: 46,
-    name: "2022 하모니 다이어리-L",
+    name: "2022 하모니 다이어리-M",
     brand: "GONGJANG",
     size: "125*180",
     image:
@@ -1075,7 +1075,7 @@ const Information = [
   },
   {
     id: 49,
-    name: "2022 Hello Tiger Planner(2022 헬로 타이거 플래너)",
+    name: "2022 Hello Tiger Planner",
     brand: "CHACHAP",
     size: "95*170",
     image:
@@ -1096,7 +1096,7 @@ const Information = [
   },
   {
     id: 50,
-    name: "2022 chachap Note calendar(2022 캐찹 노트캘린더)",
+    name: "2022 chachap Note calendar",
     brand: "CHACHAP",
     size: "150*210",
     image:
@@ -1118,7 +1118,7 @@ const Information = [
   {
     id: 51,
     name: "밴도 WEEK TO WEEK 메가 데스크 노트패드 - ONE DAY AT A TIME",
-    brand: "BLESS &amp; CO.",
+    brand: "BLESS & CO.",
     size: "220*330",
     image:
       "http://thumbnail.10x10.co.kr/webimage/image/basic600/414/B004146786.jpg?cmd=thumb&amp;w=500&amp;h=500&amp;fit=true&amp;ws=false",
@@ -1465,7 +1465,7 @@ const Information = [
   },
   {
     id: 66,
-    name: "[만년형] Be nice to yourself 다이어리",
+    name: "Be nice to yourself 다이어리",
     brand: "PAPERIAN",
     size: "140*148",
     image:
@@ -1824,7 +1824,7 @@ const Information = [
   },
   {
     id: 82,
-    name: "2022 플랜온 먼슬리플래너 A5",
+    name: "2022 플랜온 먼슬리플래너",
     brand: "PAPERIAN",
     size: "150*215",
     image:
@@ -1893,7 +1893,7 @@ const Information = [
   },
   {
     id: 85,
-    name: "아이씨엘 그날의감성 다이어리 2022-L",
+    name: "그날의감성 다이어리 2022-L",
     brand: "ICIEL01",
     size: "136*196",
     image:
@@ -2046,7 +2046,7 @@ const Information = [
   },
   {
     id: 92,
-    name: "2022 나의 백조에게 일러스트 다이어리 세트 (다이어리+스티커+엽서)",
+    name: "2022 나의 백조에게 일러스트 다이어리 세트",
     brand: "WANNATHIS",
     size: "146*146",
     image:
@@ -2259,7 +2259,7 @@ const Information = [
   },
   {
     id: 102,
-    name: "A5 오디너리 데이즈 6공 다이어리 세트 (만년형)",
+    name: "A5 오디너리 데이즈 6공 다이어리 세트",
     brand: "MONOLIKE",
     size: "148*210",
     image:
@@ -2282,7 +2282,7 @@ const Information = [
   },
   {
     id: 103,
-    name: "2022 Dot Your Day Diary (날짜형)",
+    name: "2022 Dot Your Day Diary",
     brand: "BE ON D",
     size: "132*187",
     image:
@@ -2339,7 +2339,7 @@ const Information = [
   },
   {
     id: 106,
-    name: "꼼꼬미 2022 초콜릿 다꾸 6공 시스템 회사 다이어리",
+    name: "2022 초콜릿 다이어리",
     brand: "KKOMKKOMI",
     size: "145*210",
     image:
@@ -2362,7 +2362,7 @@ const Information = [
   },
   {
     id: 107,
-    name: "[날짜형] 2022 라이프가드너 플래너",
+    name: "2022 라이프가드너 플래너",
     brand: "PAPERIAN",
     size: "120*185",
     image:
@@ -2580,7 +2580,7 @@ const Information = [
   },
   {
     id: 116,
-    name: "2022 에브리 홀리데이 다이어리 - 날짜형",
+    name: "2022 에브리 홀리데이 다이어리",
     brand: "7321 DESIGN",
     size: "128*184",
     image:
@@ -3104,7 +3104,7 @@ const Information = [
   },
   {
     id: 142,
-    name: "[오브젝트] 2022 오브젝트 다이어리",
+    name: "2022 오브젝트 다이어리",
     brand: "오브젝트",
     size: "130*180",
     image:
@@ -3168,7 +3168,7 @@ const Information = [
   },
   {
     id: 145,
-    name: "Weekdays &amp; Weekends",
+    name: "Weekdays & Weekends",
     brand: "WHENIWASYOUNG",
     size: "125*170",
     image: "https://cdn.imweb.me/thumbnail/20211014/5a64fe819de41.jpg",
@@ -3303,7 +3303,7 @@ const Information = [
     tag: ["만년", "일간", "3개월", "A6이하", "메모지"],
   },
   {
-    id: "❗",
+    id: 154,
     name: "PPF 2022 large",
     brand: "MMMG",
     size: "145*210",
@@ -3326,7 +3326,7 @@ const Information = [
     ],
   },
   {
-    id: 154,
+    id: 155,
     name: "PPF 10 large",
     brand: "MMMG",
     size: "145*210",
@@ -3349,7 +3349,7 @@ const Information = [
     ],
   },
   {
-    id: 155,
+    id: 156,
     name: "PPF 2022 medium",
     brand: "MMMG",
     size: "126*174",
@@ -3372,7 +3372,7 @@ const Information = [
     ],
   },
   {
-    id: 156,
+    id: 157,
     name: "PPF 10 medium",
     brand: "MMMG",
     size: "126*174",
@@ -3395,7 +3395,7 @@ const Information = [
     ],
   },
   {
-    id: 157,
+    id: 158,
     name: "NEW DAY",
     brand: "MMMG",
     size: "115*145",
@@ -3419,7 +3419,7 @@ const Information = [
     ],
   },
   {
-    id: 158,
+    id: 159,
     name: "루카랩 2022 레코드 아카이브 날짜형 다이어리",
     brand: "LUCALAB",
     size: "148*210",
@@ -3444,7 +3444,7 @@ const Information = [
     ],
   },
   {
-    id: 159,
+    id: 160,
     name: "하트베어 다이어리 ver.3",
     brand: "LOVE IS GIVING",
     size: "130*185",
@@ -3466,7 +3466,7 @@ const Information = [
     ],
   },
   {
-    id: 160,
+    id: 161,
     name: "옐로베어 다이어리",
     brand: "LOVE IS GIVING",
     size: "130*185",
@@ -3488,7 +3488,7 @@ const Information = [
     ],
   },
   {
-    id: 161,
+    id: 162,
     name: "2022 Appointment Planner [Business Weekly B6]",
     brand: "MONOPOLY",
     size: "128*182",
@@ -3511,30 +3511,6 @@ const Information = [
       "100g",
       "가름끈",
       "밴드",
-    ],
-  },
-  {
-    id: 162,
-    name: "[텐텐단독] 빈티지 레코드 아카이브 다이어리",
-    brand: "LUCALAB",
-    size: "148*210",
-    image:
-      "http://thumbnail.10x10.co.kr/webimage/image/basic600/418/B004185276-2.jpg?cmd=thumb&amp;w=500&amp;h=500&amp;fit=true&amp;ws=false",
-    link: "http://www.10x10.co.kr/shopping/category_prd.asp?itemid=4185276&amp;disp=101102&amp;pCtr=101102",
-    tag: [
-      "만년",
-      "연간",
-      "월간",
-      "주간",
-      "프리노트",
-      "월간전체-주간전체",
-      "넓은세로형",
-      "1년",
-      "A5",
-      "소프트커버",
-      "양장/반양장",
-      "120g",
-      "포켓",
     ],
   },
   {
@@ -3612,7 +3588,7 @@ const Information = [
   },
   {
     id: 166,
-    name: "Essential note - 2022 Diary (날짜형)",
+    name: "Essential note - 2022 Diary",
     brand: "TROLLS PAPER",
     size: "130*185",
     image:
@@ -3634,7 +3610,7 @@ const Information = [
   },
   {
     id: 167,
-    name: "릴리 6공 지퍼 다이어리 (만년형)",
+    name: "릴리 6공 지퍼 다이어리",
     brand: "DESIGN GOMGOM",
     size: "148*172",
     image:
@@ -3656,7 +3632,7 @@ const Information = [
   },
   {
     id: 168,
-    name: "콤마비 2022년 투데이 다이어리 (날짜형)",
+    name: "콤마비 2022년 투데이 다이어리",
     brand: "COMMA B",
     size: "148*210",
     image:
@@ -3704,7 +3680,7 @@ const Information = [
   },
   {
     id: 170,
-    name: "애프터글로우 데코 다이어리 만년형 (다이어리+스티커10장)",
+    name: "애프터글로우 데코 다이어리",
     brand: "LIVEWORK",
     size: "135*190",
     image:
@@ -3957,7 +3933,7 @@ const Information = [
   },
   {
     id: 181,
-    name: "스누피 카툰 다이어리&amp;볼펜 세트",
+    name: "스누피 카툰 다이어리&볼펜 세트",
     brand: "HMNOTE",
     size: "150*200",
     image:
@@ -4835,7 +4811,7 @@ const Information = [
   },
   {
     id: 219,
-    name: "썸무드 저널 V2 (책갈피,봉투세트)",
+    name: "썸무드 저널 V2",
     brand: "SOME MOOD DESIGN",
     size: "140*190",
     image:
@@ -4858,7 +4834,7 @@ const Information = [
   },
   {
     id: 220,
-    name: "루카랩 2022 스크랩 더 모먼트",
+    name: "2022 스크랩 더 모먼트",
     brand: "LUCALAB",
     size: "128*183",
     image:
@@ -5347,7 +5323,7 @@ const Information = [
     image:
       "https://contents.sixshop.com/thumbnails/uploadedFiles/146950/product/image_1635163857848_2500.jpg",
     link: "https://goodieslab.com/product/weeklystickynotes",
-    tag: ["만년", "월간", "좁은가로형", "1년이상", "A6이하", "메모지"],
+    tag: ["만년", "주간", "좁은가로형", "1년이상", "A6이하", "메모지"],
   },
   {
     id: 242,
@@ -5812,6 +5788,79 @@ const Information = [
       "가죽커버",
       "양장/반양장",
       "밴드",
+    ],
+  },
+  {
+    id: 262,
+    name: "[텐텐단독] 빈티지 레코드 아카이브 다이어리",
+    brand: "LUCALAB",
+    size: "148*210",
+    image:
+      "http://thumbnail.10x10.co.kr/webimage/image/basic600/418/B004185276-2.jpg?cmd=thumb&amp;w=500&amp;h=500&amp;fit=true&amp;ws=false",
+    link: "http://www.10x10.co.kr/shopping/category_prd.asp?itemid=4185276&amp;disp=101102&amp;pCtr=101102",
+    tag: [
+      "만년",
+      "연간",
+      "월간",
+      "주간",
+      "프리노트",
+      "월간전체-주간전체",
+      "넓은세로형",
+      "1년",
+      "A5",
+      "소프트커버",
+      "양장/반양장",
+      "120g",
+      "포켓",
+    ],
+  },
+  {
+    id: 263,
+    name: "(12월 둘째 주 발송) ist diary brown",
+    brand: "P.A.C.",
+    size: "125*185",
+    image:
+      "https://pineapplecity.kr/web/product/tiny/202111/f966f4ad1e6dfebd5c00472b0e62d218.jpg",
+    link: "https://pineapplecity.kr/product/12%EC%9B%94-%EB%91%98%EC%A7%B8-%EC%A3%BC-%EB%B0%9C%EC%86%A1-ist-diary-brown/45/category/23/display/1/",
+    tag: [
+      "만년",
+      "연간",
+      "월간",
+      "주간",
+      "프리노트",
+      "월간-주간-월간-주간",
+      "좁은가로형",
+      "1년",
+      "B6",
+      "하드커버",
+      "가죽커버",
+      "양장/반양장",
+      "120g",
+      "가름끈",
+    ],
+  },
+  {
+    id: 264,
+    name: "(12월 둘째 주 발송) ist diary white",
+    brand: "P.A.C.",
+    size: "125*185",
+    image:
+      "https://pineapplecity.kr/web/product/tiny/202111/69302dbd6739cb792026ec32fef688aa.jpg",
+    link: "https://pineapplecity.kr/product/12%EC%9B%94-%EB%91%98%EC%A7%B8-%EC%A3%BC-%EB%B0%9C%EC%86%A1-ist-diary-white/46/category/23/display/1/",
+    tag: [
+      "만년",
+      "연간",
+      "월간",
+      "주간",
+      "프리노트",
+      "월간-주간-월간-주간",
+      "좁은가로형",
+      "1년",
+      "B6",
+      "하드커버",
+      "양장/반양장",
+      "120g",
+      "가름끈",
     ],
   },
 ];
