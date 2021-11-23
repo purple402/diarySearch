@@ -1,10 +1,19 @@
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   padding: 10px;
-  /* background: linear-gradient(rgb(255, 187, 51) 50%, rgb(85, 187, 170) 0);
-  background-size: 100% 50px; */
   background: linear-gradient(rgb(246 244 245) 95%, rgb(208 223 234) 0);
   background-size: 100% 50px;
-  
+  font-family: 'GowunDodum-Regular';
+}
+
+button {
+  font-family: 'GowunDodum-Regular';
 }
 
 .keywordMessage {
@@ -13,6 +22,7 @@ body {
   justify-content: center;
   height: 4rem;
   font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .App {
@@ -26,6 +36,8 @@ body {
   padding-top: 20px;
 }
 
+
+/* title */
 .titleDiv {
   display: flex;
   flex-direction: column;
@@ -38,13 +50,24 @@ body {
   outline: 4px solid rgb(239, 64, 81);
 }
 
-#title {
-  font-size: 30px;
+.title {
+  display: flex;
+  align-items: center;
   margin: 10px 0;
 }
 
+#emoji {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+#appTitle {
+  font-size: 35px;
+  font-weight: 600;
+}
+
 .info {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 @media (max-width: 760px) {

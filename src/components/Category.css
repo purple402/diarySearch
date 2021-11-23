@@ -10,7 +10,6 @@
   width: 100%;
   position: relative;
   align-items: center;
-  /* overflow: hidden */
 }
 
 .groupHeader {
@@ -43,7 +42,6 @@
 }
 
 .subCategory::-webkit-scrollbar-thumb {
-  /* background-color: rgba(112, 115, 196, 1); */
   background-color: rgb(141, 142, 163);
   border-radius: 0.3rem;
 }
