@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/diarySearch/static/css/main.2fb818c1.chunk.css",
+    "main.css": "/diarySearch/static/css/main.38cfbf2c.chunk.css",
     "main.js": "/diarySearch/static/js/main.6434d856.chunk.js",
     "main.js.map": "/diarySearch/static/js/main.6434d856.chunk.js.map",
     "runtime-main.js": "/diarySearch/static/js/runtime-main.02e87240.js",
@@ -10,13 +10,13 @@
     "static/js/3.2fbe1308.chunk.js": "/diarySearch/static/js/3.2fbe1308.chunk.js",
     "static/js/3.2fbe1308.chunk.js.map": "/diarySearch/static/js/3.2fbe1308.chunk.js.map",
     "index.html": "/diarySearch/index.html",
-    "static/css/main.2fb818c1.chunk.css.map": "/diarySearch/static/css/main.2fb818c1.chunk.css.map",
+    "static/css/main.38cfbf2c.chunk.css.map": "/diarySearch/static/css/main.38cfbf2c.chunk.css.map",
     "static/js/2.171653de.chunk.js.LICENSE.txt": "/diarySearch/static/js/2.171653de.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.02e87240.js",
     "static/js/2.171653de.chunk.js",
-    "static/css/main.2fb818c1.chunk.css",
+    "static/css/main.38cfbf2c.chunk.css",
     "static/js/main.6434d856.chunk.js"
   ]
 }
