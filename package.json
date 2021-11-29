@@ -37,5 +37,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://purple402.github.io/diarySearch"
+  "homepage": "https://purple402.github.io/diarySearch",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
