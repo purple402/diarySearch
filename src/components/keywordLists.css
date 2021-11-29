@@ -6,6 +6,7 @@
     padding-left: 10px;
 }
 
+/* keyword button */
 .keywordDeleteBtn {
     background-color: rgb(255, 255, 255);
     border: 0.3px solid rgba(102, 102, 102, 0.466);
@@ -21,20 +22,6 @@
     box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.keywordDeleteBtn:hover {
-    background-color: rgba(255, 255, 0, 0.507);
-}
-
-.isChecked .keywordDeleteBtn {
-    background-color: rgba(46, 70, 133, 1);
-    border: none;
-    color: white;
-}
-
-.isChecked .keywordDeleteBtn:hover {
-    background-color: rgba(240, 240, 29, 0.87);
-}
-
 .keywordDeleteBtn span {
     margin-right: 5px;
     margin-top: 1px;
@@ -44,9 +31,27 @@
     margin: 2px 7px 0 0;
 }
 
+/* selected keyword button */
+.isChecked .keywordDeleteBtn {
+    background-color: rgba(46, 70, 133, 1);
+    border: none;
+    color: white;
+}
+
 @media (max-width: 860px) {
     .keywordDeleteBtn {
         font-size: 0.9rem;
         height: 35px;
+    }
+}
+
+@media (hover: hover) {
+    .keywordDeleteBtn:hover {
+        background-color: rgb(97, 119, 177);
+        color: white;
+    }
+
+    .isChecked .keywordDeleteBtn:hover {
+        background-color: rgb(97, 119, 177);
     }
 }

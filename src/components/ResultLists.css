@@ -89,6 +89,7 @@
 
   .diaryLink {
     display: block;
+    width: 125px;
   }
 
   .diary .keywordLists {
