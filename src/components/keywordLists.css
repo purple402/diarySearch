@@ -45,7 +45,7 @@
     }
 }
 
-@media (hover: hover) {
+@media (min-width: 860px) {
     .keywordDeleteBtn:hover {
         background-color: rgb(97, 119, 177);
         color: white;
