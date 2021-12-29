@@ -90,7 +90,7 @@ function App() {
         <span id="emoji">📚</span>
         <span id="appTitle">다이어리 검색기</span>
       </div>
-      <span className="info">{length}개의 다이어리들 중 검색합니다 (2022.12.16)</span>
+      <span className="info">{length}개의 다이어리들 중 검색합니다 (2022.12.18)</span>
       <a
         class="info"
         href="https://joy-lee.notion.site/b4d709f83ebe436d84599e3e99d8fbab"
