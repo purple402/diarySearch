@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/diarySearch/static/css/main.450353ed.chunk.css",
-    "main.js": "/diarySearch/static/js/main.ef4c4971.chunk.js",
-    "main.js.map": "/diarySearch/static/js/main.ef4c4971.chunk.js.map",
+    "main.js": "/diarySearch/static/js/main.1aff0b49.chunk.js",
+    "main.js.map": "/diarySearch/static/js/main.1aff0b49.chunk.js.map",
     "runtime-main.js": "/diarySearch/static/js/runtime-main.02e87240.js",
     "runtime-main.js.map": "/diarySearch/static/js/runtime-main.02e87240.js.map",
     "static/js/2.171653de.chunk.js": "/diarySearch/static/js/2.171653de.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.02e87240.js",
     "static/js/2.171653de.chunk.js",
     "static/css/main.450353ed.chunk.css",
-    "static/js/main.ef4c4971.chunk.js"
+    "static/js/main.1aff0b49.chunk.js"
   ]
 }
